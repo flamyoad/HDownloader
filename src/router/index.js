@@ -1,14 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import ListScreen from "../views/ListScreen.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "ListScreen",
+    component: ListScreen
   },
   {
     path: "/about",
@@ -22,7 +22,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: process.env.IS_ELECTRON ? 'hash' : 'history',
   base: process.env.BASE_URL,
   routes
 });

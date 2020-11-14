@@ -1,14 +1,30 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="flex flex-col h-full">
+    <InputUrlField />
+    <div class="flex flex-row mb-auto">
+      <SideBar class="w-1/8" />
+      <router-view class="w-7/8" />
     </div>
-    <router-view />
+    <BottomStatusBar class="h-10 sticky" />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import InputUrlField from "@/components/InputUrlField";
+import SideBar from "@/components/SideBar";
+import BottomStatusBar from "@/components/BottomStatusBar";
+
+export default {
+  name: "App",
+  components: {
+    InputUrlField,
+    SideBar,
+    BottomStatusBar,
+  },
+};
+</script>
+
+<style scoped lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
