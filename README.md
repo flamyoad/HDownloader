@@ -1,4 +1,4 @@
-# hdownloader
+# HDownloader
 
 ## Project setup
 ```
