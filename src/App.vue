@@ -33,6 +33,10 @@ export default {
   color: #2c3e50;
 }
 
+div {
+  user-select: none;
+}
+
 #nav {
   padding: 30px;
 
@@ -41,7 +45,7 @@ export default {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #42b983;F:abs($number: 0)
     }
   }
 }

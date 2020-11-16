@@ -6,7 +6,7 @@
       placeholder="Enter your url here"
     />
     <button
-      class="bg-white text-gray-800 hover:text-white hover:bg-purple-700 border-current font-bold rounded px-6 py-2"
+      class="bg-white text-gray-800 hover:text-white hover:bg-gray-600 border-current font-bold rounded px-6 py-2 focus:outline-none"
     >
       Add
     </button>

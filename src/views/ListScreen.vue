@@ -1,6 +1,6 @@
 <template> 
   <div class="flex flex-row">
-    <ItemTable class="w-5/8"/>
+    <ItemTable class="w-6/8"/>
     <ItemOverview class="w-3/8"/>
   </div>
 </template>
